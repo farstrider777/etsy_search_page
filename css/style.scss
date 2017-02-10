@@ -3,7 +3,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-radius: 3px;
-    //border: 1px dotted #F56400;
+  //  border: 1px dotted #F56400;
  }
 
 a {
@@ -93,8 +93,12 @@ nav li {
 
 header span {
   color: #0192B5;
-  padding-left: 1.5%;
+  //padding-left: .5%;
   font-size: 14px;
+}
+
+.blue{
+  color: #0192B5;
 }
 
 .sign-in {
@@ -117,10 +121,19 @@ header span {
 
 div span {
   font-size: 13px;
-  padding-top: 5px;
-  padding-left: 9px;
-  padding-bottom: 5px;
   letter-spacing: .3px;
+}
+
+.space{
+  margin-right: 21%
+}
+
+.show-r {
+  display: inline-block;
+  margin-top: 35px;
+  margin-right: 14%;
+  margin-left: 2.3%;
+  font-weight: bold;
 }
 
 .l-menu {
@@ -128,6 +141,7 @@ div span {
   display: inline-block;
   position: absolute;
   top: 49px;
+  margin-left: 2.5%;
 
 }
 
@@ -148,16 +162,11 @@ div span {
   font-size: 12px;
   letter-spacing: .2px;
   height: 20px;
-  //border-right: 1px solid #E1E3DF;
-  //border-left: 1px solid #E1E3DF;
 }
 
 .cap-sell-price{
  width: 230px;
  height: 20px;
- //border-bottom: 1px solid #E1E3DF;
- //border-left: 1px solid #E1E3DF;
- //border-right: 1px solid #E1E3DF;
 }
 
 
