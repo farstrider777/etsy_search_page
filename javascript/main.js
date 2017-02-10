@@ -37,5 +37,12 @@ function convertPriceCode(pCode){
   }else if(pCode === "GBP"){
     return "&#163;";
   }
-
 }
+
+$(".image-container").hover(function() {
+  console.log("over")
+  //$(".image-container").removeClass("low-opacity");
+}, function() {
+  console.log("andout")
+  //$(".image-container").addClass("low-opacity");
+});

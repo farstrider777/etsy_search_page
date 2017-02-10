@@ -1,22 +1,44 @@
-*{
+* {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-radius: 3px;
-      //  border: 1px dotted #F56400;
+    //border: 1px dotted #F56400;
  }
 
-a{
+a {
     text-decoration: none;
     color: unset;
 }
 
-header{
+header {
   border-bottom: 1px solid #E1E3DF;
   height: 75px;
 }
 
-div ul{
+/*
+.sprite {
+	background: url('../images/cart.png') no-repeat 0 -3px;
+	width: 32px;
+	height: 26px;
+  display:inline-block;
+}
+*/
+
+.cart {
+  display:inline-block;
+  border-left: 1px solid #E1E3DF;
+  opacity: .5;
+  font-size: 14px;
+  padding: 6px;
+}
+
+.cart-pic{
+  height: 21px;
+  width: 21px;
+}
+
+div ul {
   list-style-type: none;
   background-color: #FFFFFF;
   width: 100%;
@@ -25,7 +47,7 @@ div ul{
   border: 1px solid #E1E3DF;
 }
 
-div li{
+div li {
   font-size: 13px;
   color: #0197BF;
   padding-top: 5px;
@@ -34,7 +56,7 @@ div li{
   letter-spacing: .3px;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   border-bottom: 1px solid #E1E3DF;
   padding-bottom: 13px;
@@ -42,19 +64,19 @@ nav ul{
   font-size: 13px;
 }
 
-nav li{
+nav li {
   display: inline-block;
   color: #847777;
   padding-right: 19px;
   padding-left: -5px;
 }
 
-.main{
+.main {
   background-color: #FAF9F5;
   position: relative;
 }
 
-.logo{
+.logo {
   display: inline-block;
   color: #F56400;
   font-size: 30px;
@@ -63,19 +85,19 @@ nav li{
   padding-right: 2.3%;
 }
 
-.input{
+.input {
   height: 30px;
   width: 27%;
   border: 1px solid #E1E3DF;
 }
 
-header span{
+header span {
   color: #0192B5;
   padding-left: 1.5%;
   font-size: 14px;
 }
 
-.sign-in{
+.sign-in {
   border: 1px solid #0192B5;
   padding: 6px;
   margin-left: 2%;
@@ -89,11 +111,11 @@ header span{
   font-size: 14px;
 }
 
-#over-results{
+#over-results {
   height: 56px;
 }
 
-div span{
+div span {
   font-size: 13px;
   padding-top: 5px;
   padding-left: 9px;
@@ -101,7 +123,7 @@ div span{
   letter-spacing: .3px;
 }
 
-.l-menu{
+.l-menu {
   width: 20%;
   display: inline-block;
   position: absolute;
@@ -147,7 +169,7 @@ div span{
   float: left;
 }
 
-.p-code{
+.p-code {
   display: inline-block;
   font-size: 12px;
   color: #78C048;
@@ -155,7 +177,7 @@ div span{
   float: right;
 }
 
-.price{
+.price {
   display: inline-block;
   font-size: 12px;
   color: #78C048;

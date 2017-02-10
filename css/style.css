@@ -12,6 +12,25 @@ header {
   border-bottom: 1px solid #E1E3DF;
   height: 75px; }
 
+/*
+.sprite {
+	background: url('../images/cart.png') no-repeat 0 -3px;
+	width: 32px;
+	height: 26px;
+  display:inline-block;
+}
+*/
+.cart {
+  display: inline-block;
+  border-left: 1px solid #E1E3DF;
+  opacity: .5;
+  font-size: 14px;
+  padding: 6px; }
+
+.cart-pic {
+  height: 21px;
+  width: 21px; }
+
 div ul {
   list-style-type: none;
   background-color: #FFFFFF;
