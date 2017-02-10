@@ -2,10 +2,8 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border-radius: 3px; }
-
-.image {
-  display: inline-block; }
+  border-radius: 3px;
+  border: 1px dotted #F56400; }
 
 header {
   border-bottom: 1px solid #E1E3DF;
@@ -75,7 +73,7 @@ header span {
   font-size: 14px; }
 
 #over-results {
-  height: 66px; }
+  height: 56px; }
 
 div span {
   font-size: 13px;
@@ -94,3 +92,29 @@ div span {
   width: 75%;
   display: inline-block;
   margin-left: 25%; }
+
+.image-container {
+  display: inline-block;
+  padding: 10px; }
+
+.caption {
+  width: 230px;
+  font-size: 12px;
+  letter-spacing: .2px; }
+
+.seller {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .2px; }
+
+.p-code {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .2px;
+  text-align: right; }
+
+.price {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .2px;
+  text-align: right; }
