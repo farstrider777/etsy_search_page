@@ -1,4 +1,9 @@
+var currentHtml;
 
-$(".results").html(`<div class="muffin"><img src="${etsyData.results[0].Images[0].url_75x75}"/></div>`);
-
-etsyData.results[0].Images[0].url_75x75
+for(var count = 0; count < etsyData.results.length; count++){
+  currentHtml = $(".results").html();
+  console.log(currentHtml);
+  currentHtml += `<div class="image"><img src="${etsyData.results[count].Images[0].url_170x135}"/></div>`;
+  $(".results").html(currentHtml);
+  console.log(currentHtml);
+}
