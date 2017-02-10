@@ -3,12 +3,12 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-radius: 3px;
-    border: 1px dotted #F56400;
+      //  border: 1px dotted #F56400;
  }
 
-.image{
-  //width: 250px;
-  //height: 200px;
+a{
+    text-decoration: none;
+    color: unset;
 }
 
 header{
@@ -117,31 +117,48 @@ div span{
 
 .image-container{
   display:inline-block;
-  padding: 10px;
+  margin: 10px;
+  border: 1px solid #E1E3DF;
 }
 
 .caption{
   width: 230px;
   font-size: 12px;
   letter-spacing: .2px;
+  height: 20px;
+  //border-right: 1px solid #E1E3DF;
+  //border-left: 1px solid #E1E3DF;
 }
+
+.cap-sell-price{
+ width: 230px;
+ height: 20px;
+ //border-bottom: 1px solid #E1E3DF;
+ //border-left: 1px solid #E1E3DF;
+ //border-right: 1px solid #E1E3DF;
+}
+
 
 .seller{
   display: inline-block;
   font-size: 12px;
   letter-spacing: .2px;
+  color: #9A9A9A;
+  float: left;
 }
 
 .p-code{
   display: inline-block;
   font-size: 12px;
+  color: #78C048;
   letter-spacing: .2px;
-  text-align: right;
+  float: right;
 }
 
 .price{
   display: inline-block;
   font-size: 12px;
+  color: #78C048;
   letter-spacing: .2px;
-  text-align: right;
+  float: right;
 }

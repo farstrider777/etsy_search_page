@@ -3,14 +3,23 @@ var currentHtml;
 for(var count = 0; count < etsyData.results.length; count++){
   currentHtml = $(".results").html();
   currentHtml += `<div class="image-container">
-  <div class="image"><img width=230 height=184 src="${etsyData.results[count].Images[0].url_170x135}"/></div>
+  <div class="image"><a href="${etsyData.results[count].url}">
+    <img width=230 height=184 src="${etsyData.results[count].Images[0].url_170x135}"/></div>
+  </a>
+  <div class="caption"><a href="${etsyData.results[count].url}">
+    ${captionShrink(etsyData.results[count].title)}</div>
+  </a>
   <div class="cap-sell-price">
-  <div class="caption">${captionShrink(etsyData.results[count].title)}</div>
-  <div class="seller">${etsyData.results[count].Shop.shop_name}</div>
-  <div class="p-code">${convertPriceCode(etsyData.results[count].currency_code)}</div>
-  <div class="price">${etsyData.results[count].price}</div>
-  </div>
-  <div>`;
+    <div class="seller"><a href="#">
+      ${etsyData.results[count].Shop.shop_name}</div>
+    </a>
+    <div class="price"><a href="#">
+      ${etsyData.results[count].price}</div>
+    </a>
+    <div class="p-code"><a href="#">
+      ${convertPriceCode(etsyData.results[count].currency_code)}</div>
+    </a>
+  </div>`;
   $(".results").html(currentHtml);
 }
 
