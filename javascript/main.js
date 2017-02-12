@@ -3,6 +3,10 @@ var currentHtml;
 for(var count = 0; count < etsyData.results.length; count++){
   currentHtml = $(".results").html();
   currentHtml += `<div class="image-container">
+  <div class="heart-burger">
+    <div class="heart-container"><img class="invisible" src="images/heart.png"></div>
+    <div class="burger-container"><img class="invisible" src="images/hamburger.png" ></div>
+  </div>
   <div class="image"><a href="${etsyData.results[count].url}">
     <img width=230 height=184 src="${etsyData.results[count].Images[0].url_170x135}"/></div>
   </a>
@@ -41,8 +45,12 @@ function convertPriceCode(pCode){
 
 $(".image-container").hover(function() {
   console.log("over")
-  //$(".image-container").removeClass("low-opacity");
+  $(".heart-burger img").removeClass("invisible").addClass("reg-size");
+  $(".heart-container").addClass("hb-background");
+  $(".burger-container").addClass("hb-background");
 }, function() {
   console.log("andout")
-  //$(".image-container").addClass("low-opacity");
+  $(".heart-burger img").removeClass("reg-size").addClass("invisible");
+  $(".heart-container").removeClass("hb-background");
+  $(".burger-container").removeClass("hb-background");
 });

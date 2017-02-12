@@ -150,7 +150,8 @@ div span {
 }
 
 .image-container{
-  display:inline-block;
+  position: relative;
+  display: inline-block;
   margin: 10px;
   border: 1px solid #E1E3DF;
 }
@@ -190,4 +191,34 @@ div span {
   color: #78C048;
   letter-spacing: .2px;
   float: right;
+}
+
+.heart-burger{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.heart-container{
+  display: inline-block;
+}
+
+.burger-container{
+  display: inline-block;
+}
+
+.invisible {
+  height: 0px;
+}
+
+.hb-background{
+  background-color: #FFFFFF;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.reg-size{
+  height: 15px;
+  width: 15px;
 }
