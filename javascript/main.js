@@ -15,7 +15,7 @@ for(var count = 0; count < 16; count++){
     ${etsyData.results[count].title}</div>
   </a>
   <div class="cap-sell-price">
-    <div class="seller"><a href="#">
+    <div class="seller"><a href="${etsyData.results[count].Shop.url}">
       ${etsyData.results[count].Shop.shop_name}</div>
     </a>
     <div class="price"><a href="#">
