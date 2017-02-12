@@ -22,8 +22,10 @@ header {
   border-left: 1px solid #E1E3DF;
   opacity: .6;
   font-size: 14px;
-  padding: 6px;
+  margin-top: 10px;
+  padding-top: 3px;
   padding-left: 1.1%;
+  vertical-align: bottom;
 }
 
 .cart-pic{
@@ -39,7 +41,7 @@ div ul {
   padding: 12px;
   border: 1px solid #E1E3DF;
   font-size: 13.5px;
-  letter-spacing: .3px;  
+  letter-spacing: .3px;
 }
 
 div li {
@@ -159,11 +161,14 @@ div span {
 }
 
 .image{
-
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .search-image{
   width: 210px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .image-container{
@@ -181,11 +186,17 @@ div span {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  padding: 5px;
+
 }
 
 .cap-sell-price{
- width: 210px;
- height: 20px;
+   width: 210px;
+   height: 20px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 4px;
+   padding-bottom: 20px;
 }
 
 
