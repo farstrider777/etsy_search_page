@@ -12,20 +12,13 @@ header {
   border-bottom: 1px solid #E1E3DF;
   height: 75px; }
 
-/*
-.sprite {
-	background: url('../images/cart.png') no-repeat 0 -3px;
-	width: 32px;
-	height: 26px;
-  display:inline-block;
-}
-*/
 .cart {
   display: inline-block;
   border-left: 1px solid #E1E3DF;
-  opacity: .5;
+  opacity: .6;
   font-size: 14px;
-  padding: 6px; }
+  padding: 6px;
+  padding-left: 1.1%; }
 
 .cart-pic {
   height: 21px;
@@ -65,15 +58,19 @@ nav li {
   position: relative; }
 
 .logo {
+  position: absolute;
+  top: 5px;
+  left: 0px;
   display: inline-block;
   color: #F56400;
   font-size: 30px;
   margin-top: 15px;
-  padding-left: 2%;
-  padding-right: 2.3%; }
+  padding-right: 2.3%;
+  padding-left: 1.63%; }
 
 .input {
-  height: 30px;
+  margin-left: 10%;
+  height: 33px;
   width: 27%;
   border: 1px solid #E1E3DF; }
 
@@ -87,11 +84,12 @@ header span {
 .sign-in {
   border: 1px solid #0192B5;
   padding: 6px;
-  margin-left: 2%; }
+  margin-left: 1%;
+  margin-right: 1.1%; }
 
 .search {
-  padding: 6px 9px;
-  margin-right: 25%;
+  padding: 7.5px .95%;
+  margin-right: 28%;
   background-color: #34A8C4;
   color: white;
   font-size: 14px; }
