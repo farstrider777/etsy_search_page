@@ -1,22 +1,16 @@
-###What you did###
+###Recreated a full Etsy search page using information obtained from the API###
 
 Skills practiced
 
 1. Javascript
-  * xxx
-  * xxx
+  * Wrote Javascript to dynamically generate HTML for the search page.
+  * Used JQuery Methods to animate hover elements and effects using current target and accessing child elements.
+  * Used JQUery and vanilla javascipt to retrieve relevant information from the api to populate the web page.
 
-2. CSS
-  * xxx
+2. SCSS and CSS
+  * Used advanced methods to style the page including floats, overlays, and responsive page design.
 
 3. HTML
-  * xxx
+  * Structured and restructured HTML to be well organized while allowing access to styling and scripting.
 
-4. GitHub
-  * xxx
-
-5. Other
-  * xxx
-
-
-TO VIEW GOTO: https://farstrider777.github.io/color_clock/
+TO VIEW GOTO: https://farstrider777.github.io/etsy_search_page/
