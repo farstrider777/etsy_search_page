@@ -5,8 +5,12 @@ for(var count = 0; count < 16; count++){
   currentHtml = $(".results").html();
   currentHtml += `<div class="image-container">
   <div class="heart-burger">
-    <div class="heart-container"><a href="#"><img class="invisible" src="images/heart.png"></a></div>
-    <div class="burger-container"><a href="#"><img class="invisible" src="images/hamburger.png"></a></div>
+    <div class="heart-container"><a href="#"><img class="invisible" src="images/heart.png"/></a></div>
+    <div class="burger-container">
+    <a href="#">
+    <img class="invisible" src="images/hamburger.png"/></a></div><div class="arrow-down">
+    <a href="#">
+    <img class="invisible" src="images/arrow.png"/></a></div>
   </div>
   <div class="image"><a href="${etsyData.results[count].url}">
     <img class="search-image" src="${etsyData.results[count].Images[0].url_170x135}"/></a>
@@ -26,14 +30,10 @@ for(var count = 0; count < 16; count++){
     </div>
   </div>`;
   if(count < 4){
-    currentHtml += `<div class="ad">Ad</div>`  
+    currentHtml += `<div class="ad">Ad</div>`
   }
   $(".results").html(currentHtml);
 }
-
-//${if(count < 4)}
-//
-
 
 function convertPriceCode(pCode){
   if(pCode === "USD"){
@@ -50,13 +50,8 @@ $(".image-container").hover(function(event) {
   jevent = $(jevent);
   console.log(jevent.children('div.heart-burger'));
   jevent.children("div").children("div").children("a").children('img').removeClass("invisible").addClass("reg-size");
-//  $(jevent).find("div").removeClass("invisible").addClass("reg-size");
-  //$(".heart-burger img").removeClass("invisible").addClass("reg-size");
   jevent.children("div").children("div.heart-container").addClass("hb-background");
   jevent.children("div").children("div.burger-container").addClass("hb-background");
-  //$(".heart-container").addClass("hb-background");
-  //$(".burger-container").addClass("hb-background");
-  //jevent.addClass("z-up");
 }, function(event) {
   $(".heart-burger img").removeClass("reg-size").addClass("invisible");
   $(".heart-container").removeClass("hb-background");

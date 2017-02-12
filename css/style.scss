@@ -3,7 +3,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-radius: 3px;
-  //  border: 1px dotted #F56400;
+
  }
 
 a {
@@ -236,6 +236,8 @@ div span {
 
 .burger-container{
   display: inline-block;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .invisible {
@@ -293,4 +295,13 @@ footer {
   background-color: #FFFFFF;
   font-size: 11px;
   padding: 3px 5px;
+}
+
+.arrow-down{
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }

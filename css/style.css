@@ -197,7 +197,9 @@ div span {
   display: inline-block; }
 
 .burger-container {
-  display: inline-block; }
+  display: inline-block;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px; }
 
 .invisible {
   height: 0px; }
@@ -246,3 +248,11 @@ footer {
   background-color: #FFFFFF;
   font-size: 11px;
   padding: 3px 5px; }
+
+.arrow-down {
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px; }
