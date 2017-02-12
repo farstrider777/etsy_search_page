@@ -1,6 +1,7 @@
 var currentHtml;
 
-for(var count = 0; count < etsyData.results.length; count++){
+//etsyData.results.length not used for loop... mockup had 16 showing only
+for(var count = 0; count < 16; count++){
   currentHtml = $(".results").html();
   currentHtml += `<div class="image-container">
   <div class="heart-burger">
@@ -8,10 +9,10 @@ for(var count = 0; count < etsyData.results.length; count++){
     <div class="burger-container"><img class="invisible" src="images/hamburger.png" ></div>
   </div>
   <div class="image"><a href="${etsyData.results[count].url}">
-    <img width=230 height=184 src="${etsyData.results[count].Images[0].url_170x135}"/></div>
+    <img class="search-image" src="${etsyData.results[count].Images[0].url_170x135}"/></div>
   </a>
   <div class="caption"><a href="${etsyData.results[count].url}">
-    ${captionShrink(etsyData.results[count].title)}</div>
+    ${etsyData.results[count].title}</div>
   </a>
   <div class="cap-sell-price">
     <div class="seller"><a href="#">
@@ -25,12 +26,6 @@ for(var count = 0; count < etsyData.results.length; count++){
     </a>
   </div>`;
   $(".results").html(currentHtml);
-}
-
-function captionShrink(longCaption){
-  if(longCaption.length > 34){
-    return longCaption.slice(0, 31) + "...";
-  }
 }
 
 function convertPriceCode(pCode){

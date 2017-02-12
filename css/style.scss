@@ -149,6 +149,14 @@ div span {
   margin-left: 25%;
 }
 
+.image{
+
+}
+
+.search-image{
+  width: 210px;
+}
+
 .image-container{
   position: relative;
   display: inline-block;
@@ -157,14 +165,17 @@ div span {
 }
 
 .caption{
-  width: 230px;
+  max-width: 210px;
   font-size: 12px;
   letter-spacing: .2px;
   height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .cap-sell-price{
- width: 230px;
+ width: 210px;
  height: 20px;
 }
 
