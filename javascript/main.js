@@ -25,11 +25,14 @@ for(var count = 0; count < 16; count++){
       ${convertPriceCode(etsyData.results[count].currency_code)}</a>
     </div>
   </div>`;
+  if(count < 4){
+    currentHtml += `<div class="ad">Ad</div>`  
+  }
   $(".results").html(currentHtml);
 }
 
 //${if(count < 4)}
-//<div class="ad">Ad</div> 
+//
 
 
 function convertPriceCode(pCode){
