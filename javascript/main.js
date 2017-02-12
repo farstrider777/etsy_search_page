@@ -38,13 +38,16 @@ function convertPriceCode(pCode){
   }
 }
 
-$(".image-container").hover(function() {
-  console.log("over")
+$(".image-container").hover(function(event) {
+  console.log(event.currentTarget);
+  var jevent = event.currentTarget;
+  jevent = $(jevent);
+  console.log(jevent);
+//  $(jevent).find("div").removeClass("invisible").addClass("reg-size");
   $(".heart-burger img").removeClass("invisible").addClass("reg-size");
   $(".heart-container").addClass("hb-background");
   $(".burger-container").addClass("hb-background");
-}, function() {
-  console.log("andout")
+}, function(event) {
   $(".heart-burger img").removeClass("reg-size").addClass("invisible");
   $(".heart-container").removeClass("hb-background");
   $(".burger-container").removeClass("hb-background");

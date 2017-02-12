@@ -222,14 +222,22 @@ div span {
   height: 0px;
 }
 
-.hb-background{
+.hb-background {
   background-color: #FFFFFF;
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.reg-size{
+.reg-size {
   height: 15px;
   width: 15px;
+}
+
+footer {
+  display: inline-block;
+}
+
+.bottom {
+  margin-left: 26%;
 }

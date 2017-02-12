@@ -189,3 +189,9 @@ div span {
 .reg-size {
   height: 15px;
   width: 15px; }
+
+footer {
+  display: inline-block; }
+
+.bottom {
+  margin-left: 26%; }
